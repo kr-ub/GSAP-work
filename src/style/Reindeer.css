@@ -178,7 +178,7 @@ ul {
   width: 93%;
   height: 93%;
   border-width: 10px;
-  border-color: transparent;
+  border-color: #fff;
   transform: rotate(-45deg);
   top: 12px;
   left: 12px;
@@ -280,7 +280,6 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 
 .overlay h1 {

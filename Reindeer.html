@@ -13,6 +13,7 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <title>Reindeer</title>
   </head>
   <body>
@@ -74,6 +75,102 @@
         <div class="circle2"><span>Fringilla Maecenas</span></div>
       </div>
     </div>
-    <script></script>
+    <script>
+      TweenMax.to(".overlay h1", 2, {
+        opacity: 0,
+        y: -60,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.to(".overlay span", 2, {
+        delay: 0.3,
+        opacity: 0,
+        y: -60,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.to(".overlay", 2, {
+        delay: 1,
+        top: "-100%",
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".ellipse-container", 1, {
+        delay: 2,
+        opacity: 0,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.to(".ellipse.thick", 1, {
+        delay: 3.5,
+        scale: 5,
+        borderColor: "transparent",
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".yellow", 1, {
+        delay: 3.5,
+        opacity: 0,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".circle1", 1, {
+        delay: 2.4,
+        opacity: 0,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".circle2", 1, {
+        delay: 2.8,
+        opacity: 0,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".logo", 1, {
+        delay: 3,
+        opacity: 0,
+        y: -100,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.staggerFrom(
+        ".menu-links ul li",
+        1,
+        {
+          delay: 3.2,
+          opacity: 0,
+          x: -100,
+          ease: Expo.easeInOut,
+        },
+        0.08
+      );
+      TweenMax.from(".scrolldown", 1, {
+        delay: 3.4,
+        opacity: 0,
+        y: 100,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".text .title", 1, {
+        delay: 3,
+        opacity: 0,
+        x: 200,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".text p", 1, {
+        delay: 3.2,
+        opacity: 0,
+        x: 200,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".watchnow", 1, {
+        delay: 3.4,
+        opacity: 0,
+        x: 200,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.staggerFrom(
+        ".media ul li",
+        1,
+        {
+          delay: 3,
+          opacity: 0,
+          y: 100,
+          ease: Expo.easeInOut,
+        },
+        0.08
+      );
+    </script>
   </body>
 </html>
