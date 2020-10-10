@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style/supergate.css" />
+    <link rel="stylesheet" href="src/style/icons.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="overlay first"></div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div>
+
+    <header>
+      <div class="wrap">
+        <div class="logo">
+          <img src="src/img/supergate/logo-blue.png" alt="supergateLogo" />
+        </div>
+        <ul>
+          <li><a href="#">COMPANY</a></li>
+          <li><a href="#">PRODUCT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <section class="slider-container">
+          <div class="slider">
+            <img src="/src/img/supergate/front_slide_img_small_6.jpg" alt="" />
+          </div>
+        </section>
+        <!-- <section class="main-content">
+          <div class="card">
+            <i class="icon icon--sm icon-Post-Mail2 color--primary"></i>
+            <h2>NEWS</h2>
+            <p>
+              2020년 2월 수퍼게이트는 '우수한 기술을 보유하고 기술혁신을
+              선도하는 벤쳐창업기업으로 인정되어' 프런티어 벤쳐 기업으로
+              선정되었습니다. 본사의 SoC 설계 기술력, 2019년도 성과, 사업이이템
+              등에 높은 점수를 받았습니다.
+            </p>
+          </div>
+          <div class="card">
+            <i class="icon icon--sm icon-Preview color--primary"></i>
+            <h2>CAREER</h2>
+            <p>
+              저희 회사의 팀단위에서 책임과 자율을 중시하는 에이자일 조직을
+              지향합니다.반도체 설계, 인공지능에 대한 경력이나 지식이 있는
+              엔지니어와 새로운 비지니스 개발에 재능있는 인재들이 필요합니다.
+            </p>
+          </div>
+          <div class="card">
+            <i class="icon icon--sm icon-Pen color--primary"></i>
+            <h2>BRAND</h2>
+            <p>
+              반도체 회로에서 입력이 많고 출력이 한 개인 회로를 super gate 라고
+              합니다. 즉, 하나의 유의미한 결과를 만들기 위해서 다수의 힘이
+              필요합니다. 수퍼게이트는 자율적이고 창의적인 개인들의 에너지가
+              모였을때 혁신을 이룬다고 생각합니다.
+            </p>
+          </div>
+          <div class="card">
+            <i class="icon icon--sm icon-Road-3 color--primary"></i>
+            <h2>INVESTMENT</h2>
+            <p>
+              2019년 기술보증기금과 엔젤투자를 통해서 SEED 자금을
+              조달하였습니다. 2020년 인공지능 비지니스의 확대를 위해서 1차라운드
+              투자를 진행합니다
+            </p>
+          </div>
+        </section> -->
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // OVERLAY
+      TweenMax.to(".first", 1.5, {
+        delay: 0.2,
+        left: "-100%",
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.to(".second", 1.5, {
+        delay: 0.4,
+        left: "-100%",
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.to(".third", 1.5, {
+        delay: 0.6,
+        left: "-100%",
+        ease: Expo.easeInOut,
+      });
+    </script>
+  </body>
+</html>
